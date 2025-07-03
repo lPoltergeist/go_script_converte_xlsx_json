@@ -7,12 +7,6 @@ import (
 	"github.com/thedatashed/xlsxreader"
 )
 
-var (
-	headers []string
-	result  []map[string]any
-	i       int
-)
-
 func main() {
 	xl, err := xlsxreader.OpenFile("./nome do arquivo.xlsx")
 	if err != nil {
